@@ -62,6 +62,12 @@ python scripts/train_agent.py --algo a2c --opponents grudger,pavlov,random \
     --timesteps 150000 --save-path outputs/models/a2c_custom
 ```
 
+### Example training output plot
+
+Training performance evolution of Proximal Policy Optimization RL model trained against aggregate of IPL opponent strategies.
+
+!["Training performance evolution of Proximal Policy Optimization RL model"](assets/ppo_training.png)
+
 ## Evaluate / run a tournament
 
 ```bash
@@ -82,6 +88,12 @@ per model and opponent:
 - a bar-chart summary across all opponents
 
 and, when comparing multiple models, a score-matrix heatmap.
+
+### Example tournament performance summary plot
+
+Trained PPO agent performance across IPL opponent strategies.
+
+!["Trained PPO agent performance across IPL opponent strategy"](assets/ppo_ppo_advanced_summary.png)
 
 ## Using it as a library
 
